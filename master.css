@@ -1,0 +1,88 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+
+body{
+  overflow:hidden;
+}
+.content{
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width:50%;
+      display: inline-block;
+      border-style: solid;
+      border-radius: 20%;
+}
+
+.start{
+
+
+  background-color: rgba(0,0,178,0.6);
+  padding: 20px;
+  font-size:28px;
+  font-weight:900;
+}
+
+
+
+.scene{
+  height: 100%;
+  width:100%;
+  background: url("back.png");
+  background-size:cover;
+  position: absolute;
+  bottom:0;
+  background-repeat: no-repeat;
+}
+
+
+/* .skier{
+  position: absolute;
+  height: 200px;
+  width:190px;
+  background: url("skier.png");
+  background-size: cover;
+  transform: scaleX(-1);
+  bottom:0;
+  left:52px;
+} */
+
+
+.ski{
+  position:absolute;
+  bottom:0;
+  left:44vw;
+  height: 100px;
+  width:120px;
+  background: url("skier.png");
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+
+.skiani{
+  animation: hurd 10s linear infinite;
+}
+@keyframes hurd{
+  0%{
+    left:-10vw;
+  }
+
+  100%{
+    left:100vw;
+  }
+}
+
+a{
+  color:#00FFFF	;
+  font-size: 52px;
+  font-weight: 900;
+}
+a:active{
+ font-size: 46px;
+}

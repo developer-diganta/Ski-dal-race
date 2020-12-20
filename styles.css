@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color:	#c3fbf9;
+  overflow:hidden;
+
+}
+.scene{
+  height: 100%;
+  width:100%;
+  background: url("back.png");
+  background-size:cover;
+  position: absolute;
+  bottom:0;
+  background-repeat: no-repeat;
+}
+
+.skier{
+  position: absolute;
+  height: 200px;
+  width:190px;
+  background: url("skier.png");
+  background-size: cover;
+  transform: scaleX(-1);
+  bottom:0;
+  left:52px;
+}
+
+.jump{
+  animation: jumpp 0.7s linear;
+}
+
+@keyframes jumpp{
+  0%{
+    bottom:0;
+
+  }
+  50%{
+    bottom:422px;
+
+  }
+  100%{
+    bottom:0;
+  }
+}
+
+.hurdle{
+  position:absolute;
+  bottom:0;
+  left:44vw;
+  height: 100px;
+  width:120px;
+  background: url("hurd.png");
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+.hurdani{
+  animation: hurd 10s linear infinite;
+}
+@keyframes hurd{
+  0%{
+    left:100vw;
+  }
+
+  100%{
+    left:-10vw;
+  }
+}
+
+
+
+.score{
+font-family: 'Special Elite', cursive;
+text-align:center;
+display:block;
+float:right;
+margin-top:25%;
+margin-right:10%;
+padding:10px;
+border-style: double;
+border-color: blue;
+border-width: 10px;
+font-weight: 600;
+font-size:26px;
+
+}
+
+.content{
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: 'Special Elite', cursive;
+      font-size:32px;
+      font-weight:600;
+
+}
+.emp{
+  display: none;
+}
+
+
+.bttn{
+  background-color:#00FFFF	;
+  color:lime;
+  font-size:52px;
+
+  border-radius: 50%;
+  border-color:none;
+  padding:20px;
+}
+
+
+.logo{
+    margin-left:10%;
+    margin-top:5%;
+    position:absolute;
+    bottom:0;
+    left:24%;
+}
+
+
+.crowd{
+  /* background-image: url("cheer.png");
+  width:30%; */
+  position:absolute;
+  bottom:0;
+}
+
+.crowd2{
+  /* background-image: url("cheer.png");
+  width:30%; */
+  position:absolute;
+  bottom:0;
+  right:0px;
+}
